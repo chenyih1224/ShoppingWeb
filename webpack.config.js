@@ -17,7 +17,7 @@ module.exports = {
 		],
 		hot:true,
 		host:'localhost',
-		port:8089,
+		port:8080,
 		open:true
 	},
 	output:{
