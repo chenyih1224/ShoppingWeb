@@ -1,0 +1,47 @@
+.cart-layout {
+    width: 350px;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #f3dbdb;
+    border-radius: 5px;
+    .order-content {
+        max-height: 100px;
+        overflow-y: scroll;
+        padding: 5px 8px;
+        min-height: 200px;
+        .item-wrap {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            .item-name {
+                flex: 1;
+            }
+            .item-price{
+                width: 100px;
+            }
+
+            .item-del {
+                width: 60px;
+                text-align: center;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: #ccc;
+            }
+        }
+        .cart-empty{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+    }
+
+    .float-bar {
+        width: 100%;
+        border: 1px solid #ccc;
+        text-align: center;
+        background-color: #f40;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    .grid-item {
+        position: relative;
+        .item-img img {}
+        .item-info {
+            display: flex;
+            .item-info-left {
+                flex: 1;
+                min-width: 0;
+                .item-name {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .item-info-right {
+                box-sizing: border-box;
+                font-size: 14px;
+                min-width: 0;
+                .item-price{
+                    display: inline-block;
+                }
+                .item-addcart-btn{
+                    display: inline-block;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+    .grid-item::before {
+        content: ' ';
+        display: block;
+        background-color: #7adfac;
+        padding-bottom: 100%;
+    }
+}
